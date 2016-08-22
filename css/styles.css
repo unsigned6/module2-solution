@@ -3,26 +3,44 @@
 	margin: 0;
 	padding: 0;
 }
+body {
+	padding: 0 10px 0 10px;
+}
+h1 {
+	margin-bottom: 15px;
+	text-align: center;
+}
 h2 {
-	position: relative;
-	text-align: right;
+	position: absolute;
+	text-align: center;
+	top: 10px;
+	right: 10px;
+	border: 3px solid grey;
+	width: 95px;
 }
 article {
-	border: 1px solid grey;
+	position: relative;
+	float: left;
+}
+p {
+	border: 3px solid grey;
+	text-align: justify;
+	padding: 35px 12px 12px 12px;
+	margin: 10px;
+}
+.row {
+	width: 100%;
 }
 @media (min-width: 992px) {
 	.col-lg-4 {
-		float: left;
 		width: 33.33%;
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.col-md-6 {
-		float: left;
 		width: 50%
 	}
 	.col-md-12 {
-		float: left;
 		width: 100%;
 	}
 }
