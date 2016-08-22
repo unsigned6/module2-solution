@@ -1,41 +1,74 @@
+/* content base styles */
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: "Trebuchet MS", Helvetica, sans-serif
 }
 body {
-	padding: 0 10px 0 10px;
-}
-h1 {
-	margin-bottom: 15px;
-	text-align: center;
-}
-h2 {
-	position: absolute;
-	text-align: center;
-	top: 10px;
-	right: 10px;
-	border: 3px solid grey;
-	width: 95px;
+	padding: 40px 10px 0 10px;
 }
 article {
 	position: relative;
 	float: left;
 }
+h1 {
+	margin-bottom: 45px;
+	text-align: center;
+	font-size: 1.75em;
+}
+h2 {
+	position: absolute;
+	text-align: center;
+	font-size: 1.25em;
+	top: 10px;
+	right: 10px;
+	border: 1px solid black;
+	width: 95px;
+}
 p {
-	border: 3px solid grey;
+	border: 1px solid black;
+	border-radius: 10px;
 	text-align: justify;
+	font-size: 1em;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	padding: 35px 12px 12px 12px;
 	margin: 10px;
 }
+
+/*colors settings*/
+.chicken > h2 {
+	background-color: #ff8500;
+}
+.chicken > p {
+	background-color: #ffbc73;
+}
+.beef > h2 {
+	background-color: #9b001c;
+	color: white;
+}
+
+.beef > p {
+	background-color: #f76f87;
+}
+.sushi > h2 {
+	background-color: #97a300;
+}
+
+.sushi > p {
+	background-color: #f3fd72;
+}
+/* responsive design */
 .row {
 	width: 100%;
 }
+/* media queries for dektop */
 @media (min-width: 992px) {
 	.col-lg-4 {
 		width: 33.33%;
 	}
 }
+/* media queries for tablet */
 @media (min-width: 768px) and (max-width: 991px) {
 	.col-md-6 {
 		width: 50%
@@ -44,4 +77,3 @@ p {
 		width: 100%;
 	}
 }
-@media (max-width: 767px) {}
